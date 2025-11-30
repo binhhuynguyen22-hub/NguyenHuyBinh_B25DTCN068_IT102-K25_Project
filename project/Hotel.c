@@ -99,7 +99,8 @@ int main()
 }
 void pauseScreen(){
 	printf("nhap enter de tiep tuc...");
-	getchar();
+	int c;
+	while((c = getchar()) != '\n' && c != EOF);//end of file eof=-1 used to xóa buffer
 }
 void value(Room listroom[], int *n){
     Room Data[7] = {
