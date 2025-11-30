@@ -705,7 +705,7 @@ void checkIn(Room listroom[], int n, Booking bookings[], int *bookingCount) {
         if(year >= 2025 && isValidDate(checkInDate)) {
             validDate = 1;
         } else {
-            printf("Loi: vui long nhap dung dinh dang!\n");
+            printf("Loi: vui long nhap dung ngay thang nam!\n");
         }
         fflush(stdin);
     } while (!validDate);
